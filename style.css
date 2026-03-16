@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+.gallery-wrapper input {
+  display: none;
+}
+
+/* GRID */
+.grid-view img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* FEED hidden by default */
+.feed-view {
+  display: none;
+  max-width: 600px;
+  margin: auto;
+  height: 500px;      /* para scroll */
+  overflow-y: auto;   /* hace scroll vertical */
+}
+
+/* when feed selected */
+#feed:checked ~ .feed-view {
+  display: block;
+}
+
+#feed:checked ~ .grid-view {
+  display: none;
+}
+
+/* when grid selected */
+#grid:checked ~ .grid-view {
+  display: flex;      /* muestra solo el grid */
+}
+
+#grid:checked ~ .feed-view {
+  display: none;      /* oculta completamente las cards */
+}

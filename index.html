@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">Navbar scroll</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarScroll">
+
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"></ul>
+
+        <div class="d-flex align-items-center gap-2">
+
+          <button type="button" class="btn btn-success"
+            style="--bs-btn-padding-y: .28rem; --bs-btn-padding-x: .7rem; --bs-btn-font-size: .75rem;">
+            Create a new Post
+          </button>
+
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="fa-solid fa-gear"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4 gallery-wrapper">
+
+    <input type="radio" name="view" id="grid" checked>
+    <input type="radio" name="view" id="feed">
+
+    <div class="text-center mb-3">
+      <label for="grid" class="btn btn-primary-light">
+        <i class="fa-solid fa-table-cells"></i>
+      </label>
+
+      <label for="feed" class="btn btn-light">
+        <i class="fa-solid fa-square"></i>
+      </label>
+    </div>
+
+
+    <!-- vista con grid-->
+    <div class="grid-view row g-2">
+
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id/237/600/600" class="img-fluid">
+      </div>
+
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id/1011/600/600" class="img-fluid">
+      </div>
+
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id/1015/600/600" class="img-fluid">
+      </div>
+
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id/1020/600/600" class="img-fluid">
+      </div>
+
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id/1025/600/600" class="img-fluid">
+      </div>
+
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id/1001/600/600" class="img-fluid">
+      </div>
+
+    </div>
+
+
+    <!-- se copia para ver las mismas cards-->
+    <div class="feed-view">
+
+      <div class="card mb-4">
+        <div class="card-header d-flex justify-content-between">
+          <span>My Crazy dog Spark!</span>
+          <small>08/26</small>
+        </div>
+        <img src="https://picsum.photos/id/237/900/600" class="card-img-top">
+        <div class="card-body">
+          <strong>204 Likes</strong>
+          <p class="mb-0">This is an example of a very good photo that you can post on Instagram.</p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-header d-flex justify-content-between">
+          <span>The greatness of Croatia</span>
+          <small>04/09</small>
+        </div>
+        <img src="https://picsum.photos/id/1011/900/600" class="card-img-top">
+        <div class="card-body">
+          <strong>26985 Likes</strong>
+          <p class="mb-0">This is an example of a very good photo that you can post on Instagram.</p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-header d-flex justify-content-between">
+          <span>Beautiful Landscape</span>
+          <small>11/12</small>
+        </div>
+        <img src="https://picsum.photos/id/1015/900/600" class="card-img-top">
+        <div class="card-body">
+          <strong>1532 Likes</strong>
+          <p class="mb-0">This is an example of a very good photo that you can post on Instagram.</p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-header d-flex justify-content-between">
+          <span>Mountain View</span>
+          <small>06/03</small>
+        </div>
+        <img src="https://picsum.photos/id/1020/900/600" class="card-img-top">
+        <div class="card-body">
+          <strong>984 Likes</strong>
+          <p class="mb-0">This is an example of a very good photo that you can post on Instagram.</p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-header d-flex justify-content-between">
+          <span>City Life</span>
+          <small>01/18</small>
+        </div>
+        <img src="https://picsum.photos/id/1025/900/600" class="card-img-top">
+        <div class="card-body">
+          <strong>1200 Likes</strong>
+          <p class="mb-0">This is an example of a very good photo that you can post on Instagram.</p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-header d-flex justify-content-between">
+          <span>Ocean Vibes</span>
+          <small>03/22</small>
+        </div>
+        <img src="https://picsum.photos/id/1001/900/600" class="card-img-top">
+        <div class="card-body">
+          <strong>876 Likes</strong>
+          <p class="mb-0">This is an example of a very good photo that you can post on Instagram.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script src="https://kit.fontawesome.com/aa7e00c03f.js" crossorigin="anonymous"></script>
+
+</html>
