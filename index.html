@@ -26,11 +26,41 @@
         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"></ul>
 
         <div class="d-flex align-items-center gap-2">
-
           <button type="button" class="btn btn-success"
-            style="--bs-btn-padding-y: .28rem; --bs-btn-padding-x: .7rem; --bs-btn-font-size: .75rem;">
-            Create a new Post
+            style="--bs-btn-padding-y: .28rem; --bs-btn-padding-x: .7rem; --bs-btn-font-size: .75rem;"
+            data-bs-toggle="modal" data-bs-target="#createPostModal">
+            <b>Create a new Post</b>
           </button>
+
+          <div class="modal fade" id="createPostModal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <h5 class="modal-title">Create a new post</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                  <input type="text" class="form-control mb-2" placeholder="Title">
+                  <b>
+                    <p>Caption</p>
+                  </b>
+                  <textarea class="form-control" rows="3" placeholder="Content"></textarea>
+                  <br>
+                  <i class="fa fa-camera fa-2x"></i>
+                  <i class="fa fa-location-dot fa-2x"></i>
+
+                </div>
+
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button class="btn btn-success">Publish</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
 
           <div class="dropdown">
             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
@@ -69,7 +99,7 @@
     </div>
 
 
-    <!-- vista con grid-->
+
     <div class="grid-view row g-2">
 
       <div class="col-md-4">
@@ -99,7 +129,6 @@
     </div>
 
 
-    <!-- se copia para ver las mismas cards-->
     <div class="feed-view">
 
       <div class="card mb-4">
@@ -107,7 +136,7 @@
           <span>My Crazy dog Spark!</span>
           <small>08/26</small>
         </div>
-        <img src="https://picsum.photos/id/237/900/600" class="card-img-top">
+        <img src="https://picsum.photos/id/237/900/600" class="">
         <div class="card-body">
           <strong>204 Likes</strong>
           <p class="mb-0">This is an example of a very good photo that you can post on Instagram.</p>
@@ -119,7 +148,7 @@
           <span>The greatness of Croatia</span>
           <small>04/09</small>
         </div>
-        <img src="https://picsum.photos/id/1011/900/600" class="card-img-top">
+        <img src="https://picsum.photos/id/1011/900/600" class="">
         <div class="card-body">
           <strong>26985 Likes</strong>
           <p class="mb-0">This is an example of a very good photo that you can post on Instagram.</p>
@@ -131,7 +160,7 @@
           <span>Beautiful Landscape</span>
           <small>11/12</small>
         </div>
-        <img src="https://picsum.photos/id/1015/900/600" class="card-img-top">
+        <img src="https://picsum.photos/id/1015/900/600" class="">
         <div class="card-body">
           <strong>1532 Likes</strong>
           <p class="mb-0">This is an example of a very good photo that you can post on Instagram.</p>
@@ -143,7 +172,7 @@
           <span>Mountain View</span>
           <small>06/03</small>
         </div>
-        <img src="https://picsum.photos/id/1020/900/600" class="card-img-top">
+        <img src="https://picsum.photos/id/1020/900/600" class="">
         <div class="card-body">
           <strong>984 Likes</strong>
           <p class="mb-0">This is an example of a very good photo that you can post on Instagram.</p>
@@ -155,7 +184,7 @@
           <span>City Life</span>
           <small>01/18</small>
         </div>
-        <img src="https://picsum.photos/id/1025/900/600" class="card-img-top">
+        <img src="https://picsum.photos/id/1025/900/600" class="">
         <div class="card-body">
           <strong>1200 Likes</strong>
           <p class="mb-0">This is an example of a very good photo that you can post on Instagram.</p>
@@ -167,7 +196,7 @@
           <span>Ocean Vibes</span>
           <small>03/22</small>
         </div>
-        <img src="https://picsum.photos/id/1001/900/600" class="card-img-top">
+        <img src="https://picsum.photos/id/1001/900/600" class="">
         <div class="card-body">
           <strong>876 Likes</strong>
           <p class="mb-0">This is an example of a very good photo that you can post on Instagram.</p>
